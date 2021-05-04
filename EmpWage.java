@@ -69,6 +69,32 @@ public class EmpWage
 		
 		System.out.println("salary of employee using switch case "+(empHr*empWage));
 		
+		//UC5
+		int totalsalary =0;
+		salary=0;
+		for(int i =1 ; i<=20 ; i++)
+		{
+			 double empCheck3=Math.round(Math.random()*10)%3;
+			 if (empCheck3==IS_FULL_TIME)
+			    {
+			    	empHr=8;
+			    }
+			    else if(empCheck3==IS_PART_TIME)
+			    {
+			    	empHr=4;
+			    }
+			    else
+			    {
+			    	empHr=0;
+			    	System.out.println("employee is abscent");
+			    }
+				salary=empWage*empHr;
+			   salary=empHr*empWage;
+			   totalsalary=salary+totalsalary;
+			
+		}
+		System.out.println("total salary for 20 days "+totalsalary);
+		
 		}
 	
 
