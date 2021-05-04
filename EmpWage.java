@@ -31,8 +31,25 @@ public class EmpWage
 	    	System.out.println("employee is abscent");
 	    }
 	    
-		
-		
+		//UC3
+	    
+	    double empCheck1=Math.round(Math.random()*10)%3;
+	    int IS_PART_TIME=2;
+	    if (empCheck1==IS_FULL_TIME)
+	    {
+	    	empHr=8;
+	    }
+	    else if(empCheck1==IS_PART_TIME)
+	    {
+	    	empHr=4;
+	    }
+	    else
+	    {
+	    	empHr=0;
+	    	System.out.println("employee is abscent");
+	    }
+		salary=empWage*empHr;
+		System.out.println("salary depending on part time full time is "+salary);
 	}
 
 }
