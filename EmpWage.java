@@ -88,14 +88,39 @@ public class EmpWage
 			    	empHr=0;
 			    	System.out.println("employee is abscent");
 			    }
-				salary=empWage*empHr;
+				//salary=empWage*empHr;
 			   salary=empHr*empWage;
 			   totalsalary=salary+totalsalary;
 			
 		}
 		System.out.println("total salary for 20 days "+totalsalary);
 		
-		}
+		
+	//UC6
+	int totalWorkingHours=0;
+	int totalDays=0;
 	
-
+	while(totalWorkingHours<=100 && totalDays<=20)
+	{
+	  totalDays++;
+	  double empCheck3=Math.round(Math.random()*10)%3;
+		 if (empCheck3==IS_FULL_TIME)
+		    {
+		    	empHr=8;
+		    }
+		    else if(empCheck3==IS_PART_TIME)
+		    {
+		    	empHr=4;
+		    }
+		    else
+		    {
+		    	empHr=0;
+		    	//System.out.println("employee is abscent");
+		    }
+		   salary=empHr*empWage;
+		   totalsalary=salary+totalsalary;
+		   totalWorkingHours=totalWorkingHours+empHr;
+	}
+	System.out.println("total wages of employee in 100 empHr and 20 days "+totalsalary);
+	}
 }
