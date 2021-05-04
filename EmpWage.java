@@ -50,6 +50,26 @@ public class EmpWage
 	    }
 		salary=empWage*empHr;
 		System.out.println("salary depending on part time full time is "+salary);
-	}
+		
+		//UC4
+		int empCheck2=(int)empCheck1;
+		switch( empCheck2 )
+		{
+		case 1 :
+			 empHr=8;
+			 break;
+		case 2 :
+			empHr=4;
+			break;
+		default:
+			empHr=0;
+			System.out.println("employee is abscent");
+			break;
+		}
+		
+		System.out.println("salary of employee using switch case "+(empHr*empWage));
+		
+		}
+	
 
 }
