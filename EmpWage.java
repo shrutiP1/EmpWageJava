@@ -88,7 +88,7 @@ public class EmpWage
 			    	empHr=0;
 			    	System.out.println("employee is abscent");
 			    }
-				//salary=empWage*empHr;
+				
 			   salary=empHr*empWage;
 			   totalsalary=salary+totalsalary;
 			
@@ -115,7 +115,7 @@ public class EmpWage
 		    else
 		    {
 		    	empHr=0;
-		    	//System.out.println("employee is abscent");
+		    	
 		    }
 		   salary=empHr*empWage;
 		   totalsalary=salary+totalsalary;
